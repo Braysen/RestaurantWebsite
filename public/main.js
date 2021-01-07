@@ -60,6 +60,6 @@ function scrollTop(){
     }
 }
 
-showMenu('scroll', scrollTop);
+window.addEventListener('scroll', scrollTop)
 
 showMenu('nav-toggle', 'nav-menu');
