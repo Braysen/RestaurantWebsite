@@ -1,4 +1,5 @@
 import React from 'react'
+import Brightness2Icon from '@material-ui/icons/Brightness2';
 
 export default function Header() {
     return (
@@ -18,6 +19,7 @@ export default function Header() {
                         <li className="nav__item"><a href="#services" className="nav__link">Services</a></li>
                         <li className="nav__item"><a href="#menu" className="nav__link">Menu</a></li>
                         <li className="nav__item"><a href="#contact" className="nav__link">Contact</a></li>
+                        <li><i className="change-theme" id="theme-button"><Brightness2Icon/></i></li>
                     </ul>
                 </div>
 
