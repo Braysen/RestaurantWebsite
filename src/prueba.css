@@ -51,12 +51,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body.dark-theme{
-    --title-color: #f1f3f2;
-    --text-color: #c7d1cc;
-    --body-color: #1d2521;
-    --container-color: #273020;
-}
 
 .change-theme{
     position: absolute;
@@ -74,6 +68,13 @@ body{
     background-color: var(--body-color);
     color: var(--text-color);
     line-height: 1.6;
+}
+
+body.dark-theme{
+    --title-color: #f1f3f2;
+    --text-color: #c7d1cc;
+    --body-color: #1d2521;
+    --container-color: #273020;
 }
 
 h1,h2,h3,p,ul{

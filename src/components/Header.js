@@ -1,11 +1,13 @@
 import React from 'react'
 import Brightness2Icon from '@material-ui/icons/Brightness2';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export default function Header() {
     return (
         <>
             <a href="# " className="scrolltop" id="scroll-top">
-                <i className="scrolltop__icon">^</i>
+                <i className="scrolltop__icon"><ExpandLessIcon/></i>
             </a>
 
         <header className="l-header" id="header">
@@ -24,7 +26,7 @@ export default function Header() {
                 </div>
 
                 <div className="nav__toggle" id="nav-toggle">
-                    <i className="bx bx-menu">=</i>
+                    <i className="bx bx-menu"><MenuIcon/></i>
                 </div>
             </nav>
         </header>

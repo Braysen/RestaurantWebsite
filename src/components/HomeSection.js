@@ -8,7 +8,7 @@ export default function HomeSection() {
                 <div className="home__data">
                     <h1 className="home__title">Tasty food</h1>
                     <h1 className="home__subtitle">Try the best food of <br/> the week.</h1>
-                    <a href="# " className="button">View Menu</a>
+                    <a href="#menu" className="button">View Menu</a>
                 </div>
                 <img src={logo} alt="" className="home__img"></img>
             </div>

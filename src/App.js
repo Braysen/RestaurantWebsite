@@ -9,22 +9,48 @@ import AppSection from './components/AppSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
 
-function App() {
+const url = 'http://127.0.0.1:8000/api/clientes';
 
-  return (
-    <div className="app">
-      <Header/>
-      <main className="l-main">
-        <HomeSection/>
-        <AboutSection/>
-        <ServicesSection/>
-        <MenuSection/>
-        <AppSection/>
-        <ContactSection/>
-        <FooterSection/>
-      </main>
-    </div>
-  );
+class App extends React.Component{
+
+  state={
+    data:[]
+  }
+
+  
+
+  peticionesGet = () => {
+    
+    const respon = fetch(url, {
+      'mode': 'cors',
+      'headers': {
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
+
+    console.log(respon.data);
+  }
+
+  componentDidMount(){
+    this.peticionesGet();
+  }
+
+  render(){
+    return (
+      <div className="app">
+        <Header/>
+        <main className="l-main">
+          <HomeSection/>
+          <AboutSection/>
+          <ServicesSection/>
+          <MenuSection/>
+          <AppSection/>
+          <ContactSection/>
+          <FooterSection/>
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;
